@@ -1,0 +1,31 @@
+
+.B1{
+    background-color:rgb(172, 217, 245) ;
+}
+
+.Im{
+    height: 40px;
+    width: 40px;
+}
+
+.C1{
+    background-color: rgb(132, 66, 194);
+    background-image: url(./img/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 90% top;
+   /*  background-position: 23rem 3rem ;
+    width: 35rem ;
+    height: 20rem; */
+}
+
+.C2{
+    background-color: rgb(104, 124, 163);
+}
+
+.C3{
+    background-color: rgb(44, 44, 77);
+    height: 17rem ;
+}
+.CardText{
+    font-size: 11pt;
+}

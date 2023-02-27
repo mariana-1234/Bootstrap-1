@@ -1,0 +1,24 @@
+
+use('sample_training');
+
+db.zips.find({state:"NY"});
+db.getName();
+
+//db.users.insertOne("Exel");
+
+db.zips.find({$and:[{pop:{$gte:5000}},{pop:{$lte:10000}}]})
+
+db.zips.find({$or:[{state:"NY"},{state:"NJ"}]})
+
+
+//db.zips.find({$and:[{pop:{$gte:5000}},{pop:{$lte:10000}}],$or:[{state:"NY"},{state:"NJ"}]})
+
+//db.zips.find({state:{$in:["NY,NJ"]}});
+
+db.zips.findOne({$and:[{pop:{$gte:5000}},{pop:{$lte:10000}},{state:{$nin:["NY","NJ"]}}]})
+
+db.zips.findOne({city:/MISS/})//ME trae lo primero que encuentre
+db.zips.find({city:/MISS/})//ME trae todos los  que encuentre
+db.zips.findOne({city:/^MISS/})//ME trae lo que comience con estas siglas
+db.zips.find({city:/SH$/})//me trae lo que termine en estas siglas
+db.zips.find({grades.grade:{$eq:"A"}})
